@@ -32,6 +32,7 @@
     padding: 10%;
     text-align: left;
     width: 50%;
+    transition: all 0.3s ease-in-out;
 }
 h1{
     text-align: center;
