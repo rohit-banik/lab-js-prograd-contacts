@@ -1,31 +1,4 @@
-// //Enter your code here..
-// var display = document.getElementById('message');
-// function fetchApi() {
-//   fetch("https://jsonplaceholder.typicode.com/users")
-//     .then((res) => {
-//       return res.json();
-//     })
-//     .then((array) => {
-//       var player = "<h2>Lists of Users</h2>";
-//       array.forEach((user) => {
-//         player += `<div class="player">
-//                 <div class="strength">Name : ${user.name}</div>
-//                 <div>Email   : ${user.email}</div>
-//                 <div>Phone   : ${user.phone}</div>
-//                 <div>Website : ${user.website}</div>
-//                 <div>Company : ${user.company.name}</div>
-//                 <div>City    : ${user.address.city}</div>
-//                 <div>Zipcode : ${user.address.zipcode}</div>
-//                 </div>`;
-//       });
-//       display.innerHTML = player;
-//     })
-//     .catch((err) => {
-//         console.log(err)
-//         display.innerHTML = "Cannot load data";
-//     });
-// }
-
+//Enter your code here..
 var btn = document.getElementById("btnGet");
 
 function fetchApi() {
@@ -67,3 +40,33 @@ function fetchApi() {
     }
   );
 }
+
+//Another Approach
+
+// var display = document.getElementById('message');
+// function fetchApi() {
+//   fetch("https://jsonplaceholder.typicode.com/users")
+//     .then((res) => {
+//       return res.json();
+//     })
+//     .then((array) => {
+//       var player = "<h2>Lists of Users</h2>";
+//       array.forEach((user) => {
+//         player += `<div class="player">
+//                 <div class="strength">Name : ${user.name}</div>
+//                 <div>Email   : ${user.email}</div>
+//                 <div>Phone   : ${user.phone}</div>
+//                 <div>Website : ${user.website}</div>
+//                 <div>Company : ${user.company.name}</div>
+//                 <div>City    : ${user.address.city}</div>
+//                 <div>Zipcode : ${user.address.zipcode}</div>
+//                 </div>`;
+//       });
+//       display.innerHTML = player;
+//     })
+//     .catch((err) => {
+//         console.log(err)
+//         display.innerHTML = "Cannot load data";
+//     });
+// }
+
